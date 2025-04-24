@@ -1,2 +1,2 @@
 # Aulas
-Conteúdo das aulas do curso de Full Stack - Digital College
+Conteúdo das aulas do curso de Full Stack - Digital College.

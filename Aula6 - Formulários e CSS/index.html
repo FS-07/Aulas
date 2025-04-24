@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 3px;
+            margin-top: 2px;
+            border-radius: 4px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .checkbox-group, .radio-group {
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(2, 77, 2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100px;
+            margin: 15px auto;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form>
+            <!-- For: direcionar da label para o campo
+            id: identificador único (usado pra relacionar label e campo, tbm utilizado no css)
+            name: nome do campo que será enviado ao backend -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="">Selecione</option>
+                <option value="CE">Ceará</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+
+            <div class="checkbox-group">
+                <label>Conhecimentos:</label>
+                <label><input type="checkbox" name="conhecimentos" value="html"> HTM</label>
+                <label><input type="checkbox" name="conhecimentos" value="css"> CSS</label>
+                <label><input type="checkbox" name="conhecimentos" value="js"> JS</label>
+            </div>
+
+            <div class="radio-group">
+                <label>Turno:</label>
+                <label><input type="radio" name="turno" value="manha"> Manhã</label>
+                <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                <label><input type="radio" name="turno" value="noite"> Noite</label>
+            </div>
+
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+
+            <button>Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

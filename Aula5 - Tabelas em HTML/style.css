@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: aliceblue;
+}
+
+th, td{
+    padding: 5px;
+    text-align: center;
+}

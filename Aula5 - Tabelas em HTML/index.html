@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vamos falar sobre tabelas.</h1>
+    <!-- 
+    table -> tabela
+    th -> cabeçalhos 
+    tr -> linha
+    td -> coluna
+    -->
+    <table border="1">
+        <tr class="cabecalho">
+            <th>Nome</th>
+            <th>Unidade</th>
+            <th>Curso</th>
+        </tr>
+        <tr>
+            <td>Kauan Almeida</td>
+            <td>Aldeota</td>
+            <td>FullStack</td>
+        </tr>
+        <tr>
+            <td>Thiago GagliariGagliari</td>
+            <td>Aldeota</td>
+            <td>FullStack</td>
+        </tr>
+        <tr>
+            <td>Vitor Rocha</td>
+            <td>Aldeota</td>
+            <td>FullStack</td>
+        </tr>
+        <tr>
+            <td>Bruno Micael</td>
+            <td>&nbsp;</td>
+            <td>FullStack</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Nome:</th>
+            <td>Kauan Almeida</td>
+        </tr>
+        <tr>
+            <th>Unidade:</th>
+            <td>Aldeota</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Unidade</th>
+                <th>Curso</th>
+            </tr>
+        </thead> 
+
+        <tbody>
+            <tr>
+                <td>Vitor Rocha</td>
+                <td>Aldeota</td>
+                <td>FullStack</td>
+            </tr>
+            <tr>
+                <td>Vitor Rocha</td>
+                <td>Aldeota</td>
+                <td>FullStack</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>foot 1</td>
+            <td>foot 2</td>
+            <td>foot 3</td>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th colspan="2" >telefone</th>
+        </tr>
+
+        <tr>
+            <td>Thiago Gagliari</td>
+            <td>8599999999</td>
+            <td>8598888888</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Nome:</th>
+            <td>David</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone</th>
+            <td>8599999999</td>
+        </tr>
+        <tr>
+            <td>8598888888</td>
+        </tr>
+    </table>
+</body>
+</html>
